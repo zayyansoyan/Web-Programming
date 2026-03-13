@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wondering Photographer</title>
+
+    <style>
+        /* General page styling */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* Skip link for accessibility */
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Header */
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .divider {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
+        /* Main layout */
+
+        main {
+            padding: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Photo cards */
+
+        .photo-card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        /* Button */
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover,
+        button:focus {
+            background: #004999;
+            outline: 2px solid black;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <header>
+
+        <img src="images/the-divider.png" alt="" class="divider">
+
+        <h1>The Wondering Photographer</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About me</a></li>
+
+                <li>
+                    <a href="basket.html" aria-label="View shopping basket">
+                        <img src="images/shopping.svg" alt="Shopping basket icon" width="40">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="maincontent">
+
+        <section class="gallery">
+
+            <article class="photo-card">
+
+                <img src="images/ocean-photo.jpg" alt="View of the calm ocean along the coast of Greenland at sunset">
+
+                <p>
+                    This was from a fabulous trip to the cost of Greenland with my family. The water was lovely- but very cold!
+                </p>
+
+                <button>Add to basket</button>
+
+            </article>
+
+
+            <article class="photo-card">
+
+                <img src="images/bridge-photo.jpg" alt="Looking up at the Golden Gate Bridge in San Francisco">
+
+                <p>
+                    A picture of the Golden Gate Bridge. New York! 
+                </p>
+
+                <button>Add to basket</button>
+
+            </article>
+
+
+            <article class="photo-card">
+
+                <img src="images/valley-photo.jpg"
+                    alt="Wide river valley surrounded by mountains in Greenland where a glacier used to be">
+
+                <p>
+                    Another great photo from Greenland. It's a river valley where a glacier used to be.
+                </p>
+
+                <button>Add to basket</button>
+
+            </article>
+
+
+            <article class="photo-card">
+
+                <img src="images/waterfall-photo.jpg"
+                    alt="Large waterfall flowing into a pool surrounded by green mossy rocks">
+
+                <p>
+                    The waterfall made such a lovely sound. I could have fallen asleep!
+                </p>
+
+                <button>Add to basket</button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Copyright © The Wondering Photographer 2018.</p>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About me</a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
